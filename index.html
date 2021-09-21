@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Currency Exchanger</title>
+    <link rel="stylesheet" href="/styles/normalize.css" />
+    <link rel="stylesheet" href="/styles/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="fluid-container">
+      <h1>Currency Rate Compare</h1>
+      <p>select the currency and enter amount to exchange</p>
+      <div class="container">
+        <div class="currency">
+          <select id="firsts-Currency">
+            <option value="AED">United Arab Emirates-AED</option>
+            <option value="ARS">Argentina-ARS</option>
+            <option value="AUD">Australia-AUD</option>
+            <option value="BGN">Bulgaria-BGN</option>
+            <option value="BRL">Brazil-BRL</option>
+            <option value="BSD">Bahamas-BSD</option>
+            <option value="CAD">Canada-CAD</option>
+            <option value="CHF">Switzerland-CHF</option>
+            <option value="CLP">Chile-CLP</option>
+            <option value="CNY">China-CNY</option>
+            <option value="COP">Colombia-COP</option>
+            <option value="CZK">Czech Republic-CZK</option>
+            <option value="DKK">Denmark-DKK</option>
+            <option value="DOP">Dominican Republic-DOP</option>
+            <option value="EGP">Egypt-EGP</option>
+            <option value="EUR">European Union-EUR</option>
+            <option value="FJD">Fiji-FJD</option>
+            <option value="GBP">United Kingdom-GBP</option>
+            <option value="GTQ">Guatemala-GTQ</option>
+            <option value="HKD">Hong Kong-HKD</option>
+            <option value="HRK">Croatia-HRK</option>
+            <option value="HUF">Hungary-HUF</option>
+            <option value="IDR">Indonesia-IDR</option>
+            <option value="ILS">Israel-ILS</option>
+            <option value="INR" selected>India-INR</option>
+            <option value="ISK">Iceland-ISK</option>
+            <option value="JPY">Japan-JPY</option>
+            <option value="KRW">South Korea-KRW</option>
+            <option value="KZT">Kazakhstan-KZT</option>
+            <option value="MXN">Mexico-MXN</option>
+            <option value="MYR">Malaysia-MYR</option>
+            <option value="NOK">Norway-NOK</option>
+            <option value="NZD">New Zealand-NZD</option>
+            <option value="PAB">Panama-PAB</option>
+            <option value="PEN">Peru-PEN</option>
+            <option value="PHP">Philippines-PHP</option>
+            <option value="PKR">Pakistan-PKR</option>
+            <option value="PLN">Poland-PLN</option>
+            <option value="PYG">Paraguay-PYG</option>
+            <option value="RON">Romania-RON</option>
+            <option value="RUB">Russia-RUB</option>
+            <option value="SAR">Saudi Arabia-SAR</option>
+            <option value="SEK">Sweden-SEK</option>
+            <option value="SGD">Singapore-SGD</option>
+            <option value="THB">Thailand-THB</option>
+            <option value="TRY">Turkey-TRY</option>
+            <option value="TWD">Taiwan-TWD</option>
+            <option value="UAH">Ukraine-UAH</option>
+            <option value="USD">United States-USD</option>
+            <option value="UYU">Uruguay-UYU</option>
+            <option value="VND">Vietnam-VND</option>
+            <option value="ZAR">South Africa-ZAR</option>
+          </select>
+          <input type="number" id="first-Amount" value="1" />
+        </div>
+        <div class="currency">
+          <select id="second-Currency">
+            <option value="AED">United Arab Emirates-AED</option>
+            <option value="ARS">Argentina-ARS</option>
+            <option value="AUD">Australia-AUD</option>
+            <option value="BGN">Bulgaria-BGN</option>
+            <option value="BRL">Brazil-BRL</option>
+            <option value="BSD">Bahamas-BSD</option>
+            <option value="CAD">Canada-CAD</option>
+            <option value="CHF">Switzerland-CHF</option>
+            <option value="CLP">Chile-CLP</option>
+            <option value="CNY">China-CNY</option>
+            <option value="COP">Colombia-COP</option>
+            <option value="CZK">Czech Republic-CZK</option>
+            <option value="DKK">Denmark-DKK</option>
+            <option value="DOP">Dominican Republic-DOP</option>
+            <option value="EGP">Egypt-EGP</option>
+            <option value="EUR">European Union-EUR</option>
+            <option value="FJD">Fiji-FJD</option>
+            <option value="GBP">United Kingdom-GBP</option>
+            <option value="GTQ">Guatemala-GTQ</option>
+            <option value="HKD">Hong Kong-HKD</option>
+            <option value="HRK">Croatia-HRK</option>
+            <option value="HUF">Hungary-HUF</option>
+            <option value="IDR">Indonesia-IDR</option>
+            <option value="ILS">Israel-ILS</option>
+            <option value="INR" selected>India-INR</option>
+            <option value="ISK">Iceland-ISK</option>
+            <option value="JPY">Japan-JPY</option>
+            <option value="KRW">South Korea-KRW</option>
+            <option value="KZT">Kazakhstan-KZT</option>
+            <option value="MXN">Mexico-MXN</option>
+            <option value="MYR">Malaysia-MYR</option>
+            <option value="NOK">Norway-NOK</option>
+            <option value="NZD">New Zealand-NZD</option>
+            <option value="PAB">Panama-PAB</option>
+            <option value="PEN">Peru-PEN</option>
+            <option value="PHP">Philippines-PHP</option>
+            <option value="PKR">Pakistan-PKR</option>
+            <option value="PLN">Poland-PLN</option>
+            <option value="PYG">Paraguay-PYG</option>
+            <option value="RON">Romania-RON</option>
+            <option value="RUB">Russia-RUB</option>
+            <option value="SAR">Saudi Arabia-SAR</option>
+            <option value="SEK">Sweden-SEK</option>
+            <option value="SGD">Singapore-SGD</option>
+            <option value="THB">Thailand-THB</option>
+            <option value="TRY">Turkey-TRY</option>
+            <option value="TWD">Taiwan-TWD</option>
+            <option value="UAH">Ukraine-UAH</option>
+            <option value="USD" selected>United States-USD</option>
+            <option value="UYU">Uruguay-UYU</option>
+            <option value="VND">Vietnam-VND</option>
+            <option value="ZAR">South Africa-ZAR</option>
+          </select>
+          <input type="number" id="second-Amount" />
+        </div>
+      </div>
+    </div>
+    <script src="/Scripts/script.js"></script>
+  </body>
+</html>
